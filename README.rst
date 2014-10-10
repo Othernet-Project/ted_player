@@ -2,7 +2,7 @@
 TED player
 ==========
 
-.. image:: icon.png
+.. image:: img/wordmark.png
 
 TED player is an app for Librarian_, Outernet's library management server.
 
