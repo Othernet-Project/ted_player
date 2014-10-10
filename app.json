@@ -1,0 +1,10 @@
+{
+  "id": "ted_player",
+  "title": "TED player",
+  "version": "0.1",
+  "author": "Outernet Inc",
+  "description": {
+    "en_US": "Player for TED talks videos"
+  },
+  "icon_behavior": null
+}
