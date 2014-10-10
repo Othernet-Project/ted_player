@@ -1,10 +1,138 @@
-http_path = "/apps/ted_player/"
-css_dir = "css"
-sass_dir = "scss"
-images_dir = "img"
-javascripts_dir = "js"
-relative_assets = true
-output_style = :compressed
-# line_comments = false
+@import "compass/reset";
 
-::Sass::Script::Number.precision = 10 
+body {
+  background: #333;
+  color: #eee;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 18px;
+  background: white;
+  height: image-height('wordmark.png');
+
+  img {
+    cursor: pointer;
+  }
+}
+
+.video-list {
+  padding: 1em;
+  padding-top: 18px * 3 + image-height('wordmark.png');
+}
+
+.video {
+  display: inline-block;
+  margin: 1em;
+  background: white;
+  width: 300px;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+  }
+
+  p, h2, h3 {
+    padding: 0.5em;
+    color: #888;
+  }
+
+  h2 {
+    font-size: 120%;
+    font-weight: bold;
+    line-height: 100%;
+    border-bottom: 1px solid #e62b1e;
+    margin-bottom: 0.4em;
+    padding-bottom: 1em;
+  }
+
+  h3 {
+    font-weight: bold;
+    padding-bottom: 0;
+  }
+
+  .creds {
+    font-style: italic;
+    font-size: 90%;
+    padding-bottom: 0.5em;
+  }
+
+  .thumbnail {
+    position: relative;
+
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: transparent image-url('play_button.png') center center no-repeat;
+      opacity: 0.6;
+    }
+  }
+
+  &:hover .thumbnail span {
+    opacity: 0.9;
+  }
+
+}
+
+.player {
+  position: fixed;
+  top: 18px * 2 + image-height('wordmark.png');
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #333;
+
+  .close {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    cursor: pointer;
+    padding: 0.5em 1em;
+    font-size: 90%;
+    background: transparentize(black, 0.4);
+
+    &:hover {
+      background: transparentize(white, 0.5);
+      color: black;
+    }
+  }
+
+  .player-sidebar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 260px;
+    padding: 20px;
+    overflow-y: scroll;
+  }
+
+  .player-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 300px;
+    background: black;
+  }
+
+  .speaker {
+    font-size: 90%;
+  }
+
+  .title {
+    font-size: 120%;
+    font-weight: bold;
+    padding: 0.5em 0;
+    border-bottom: 1px solid #e62b1e;
+    margin-bottom: 1em;
+  }
+}

@@ -1,0 +1,205 @@
+/* line 5, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../scss/main.scss */
+body {
+  background: #333;
+  color: #eee;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+/* line 10, ../scss/main.scss */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 18px;
+  background: white;
+  height: 50px;
+}
+/* line 19, ../scss/main.scss */
+header img {
+  cursor: pointer;
+}
+
+/* line 24, ../scss/main.scss */
+.video-list {
+  padding: 1em;
+  padding-top: 104px;
+}
+
+/* line 29, ../scss/main.scss */
+.video {
+  display: inline-block;
+  margin: 1em;
+  background: white;
+  width: 300px;
+  cursor: pointer;
+}
+/* line 36, ../scss/main.scss */
+.video img {
+  width: 100%;
+}
+/* line 40, ../scss/main.scss */
+.video p, .video h2, .video h3 {
+  padding: 0.5em;
+  color: #888;
+}
+/* line 45, ../scss/main.scss */
+.video h2 {
+  font-size: 120%;
+  font-weight: bold;
+  line-height: 100%;
+  border-bottom: 1px solid #e62b1e;
+  margin-bottom: 0.4em;
+  padding-bottom: 1em;
+}
+/* line 54, ../scss/main.scss */
+.video h3 {
+  font-weight: bold;
+  padding-bottom: 0;
+}
+/* line 59, ../scss/main.scss */
+.video .creds {
+  font-style: italic;
+  font-size: 90%;
+  padding-bottom: 0.5em;
+}
+/* line 65, ../scss/main.scss */
+.video .thumbnail {
+  position: relative;
+}
+/* line 68, ../scss/main.scss */
+.video .thumbnail span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent url('../img/play_button.png?1412955434') center center no-repeat;
+  opacity: 0.6;
+}
+/* line 79, ../scss/main.scss */
+.video:hover .thumbnail span {
+  opacity: 0.9;
+}
+
+/* line 85, ../scss/main.scss */
+.player {
+  position: fixed;
+  top: 86px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #333;
+}
+/* line 93, ../scss/main.scss */
+.player .close {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  font-size: 90%;
+  background: rgba(0, 0, 0, 0.6);
+}
+/* line 102, ../scss/main.scss */
+.player .close:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+/* line 108, ../scss/main.scss */
+.player .player-sidebar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 260px;
+  padding: 20px;
+  overflow-y: scroll;
+}
+/* line 118, ../scss/main.scss */
+.player .player-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 300px;
+  background: black;
+}
+/* line 127, ../scss/main.scss */
+.player .speaker {
+  font-size: 90%;
+}
+/* line 131, ../scss/main.scss */
+.player .title {
+  font-size: 120%;
+  font-weight: bold;
+  padding: 0.5em 0;
+  border-bottom: 1px solid #e62b1e;
+  margin-bottom: 1em;
+}

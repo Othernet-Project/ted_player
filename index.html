@@ -3,13 +3,23 @@
 <html>
     <head>
         <title>TED Player</title>
-        <link href="player/mediaelementplayer.css">
-        <link href="player/mejs-skins.css">
-        <link href="css/main.css">
+        <link rel="stylesheet" href="player/mediaelementplayer.css">
+        <link rel="stylesheet" href="player/mejs-skins.css">
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <p>Loading...</p>
-        <script src="js/jquery.js"></script>
+        <header class="header">
+        <h1 id="logo"><img src="img/wordmark.png" alt="TED: Ideas worth spreading"></h1>
+        </header>
+        <ul class="video-list" id="video-list">
+            Loading...
+        </ul>
+        <div class="player" id="player" style="display:none">
+            Loading...
+        </div>
+        <script src="/static/js/jquery.js"></script>
+        <script src="/static/js/librarian.js"></script>
+        <script src="player/mediaelement-and-player.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
