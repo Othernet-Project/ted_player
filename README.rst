@@ -34,9 +34,9 @@ The code for this app is released under GNU GPL v3 license. Please note that
 the license does **not** cover the TED trademarks.
 
 .. note::
-    TED does not officially sponsor or endorse this app, nor does Outernet
+    **TED does not officially sponsor or endorse this app, nor does Outernet
     endorse TED. This app is just an example. All TED trademarks used in the
-    app are copyrighted property of TED Conferences LLC.
+    app are copyrighted property of TED Conferences LLC.**
 
 
 .. _Librarian: https://github.com/Outernet-Project/librarian
