@@ -2,6 +2,8 @@
 TED player
 ==========
 
+.. image:: icon.png
+
 TED player is an app for Librarian_, Outernet's library management server.
 
 TED player is written using HTML5 and JavaScript, and Librarian's experimental
