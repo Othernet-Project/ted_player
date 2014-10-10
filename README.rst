@@ -27,6 +27,12 @@ script. The script will create a zip file in the directory from which it is
 run. It's important to remember that the name of the file must match the
 metadata found in ``app.json`` file.
 
+License
+=======
+
+The code for this app is released under GNU GPL v3 license. Please note that
+the license does **not** cover the TED trademarks.
+
 .. note::
     TED does not officially sponsor or endorse this app, nor does Outernet
     endorse TED. This app is just an example. All TED trademarks used in the
@@ -37,5 +43,4 @@ metadata found in ``app.json`` file.
 .. _TED: http://www.ted.com/
 .. _Media Element: http://mediaelementjs.com/
 .. _download: http://github.com/johndyer/mediaelement/zipball/master
-
 
